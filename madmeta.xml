@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.7" type="plugin" group="system">
+	<name>System - MadMeta</name>
+	<author>Jonathan Leek</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2012 Jonathan Leek. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>builder@dev.jonathanleek.com</authorEmail>
+	<authorUrl>http://www.madabyss.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Add  META tags to your website. This can be helpful for verification codes from Google, Bing and Yahoo! or other meta information.</description>
+	<files>
+		<filename plugin="madmeta">madmeta.php</filename>
+	</files>
+	<params>
+		<param name="credit" type="radio" default="1" label="Show Credit? (Thanks!)" description="Please leave this enabled :)" >
+			<option value="1">Yes</option>
+			<option value="0">No</option>	
+		</param>
+		<param type="spacer" default="META 1" />		
+		<param name="meta1_name" type="text" default="" label="META Name" description="Place here the name of the META tag." />
+		<param name="meta1_content" type="text" default="" label="META Content" description="Place here the content of the META tag." />
+		<param type="spacer" default="META 2" />
+		<param name="meta2_name" type="text" default="" label="META Name" description="Place here the name of the META tag." />
+		<param name="meta2_content" type="text" default="" label="META Content" description="Place here the content of the META tag." />
+		<param type="spacer" default="META 3" />
+		<param name="meta3_name" type="text" default="" label="META Name" description="Place here the name of the META tag." />
+		<param name="meta3_content" type="text" default="" label="META Content" description="Place here the content of the META tag." />
+		<param type="spacer" default="META 4" />
+		<param name="meta4_name" type="text" default="" label="META Name" description="Place here the name of the META tag." />
+		<param name="meta4_content" type="text" default="" label="META Content" description="Place here the content of the META tag." />
+		<param type="spacer" default="META 5" />
+		<param name="meta5_name" type="text" default="" label="META Name" description="Place here the name of the META tag." />
+		<param name="meta5_content" type="text" default="" label="META Content" description="Place here the content of the META tag." />
+	</params>	
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="credit" type="radio" default="1" label="Show Credit? (Thanks!)" description="Please leave this enabled :)" >
+					<option value="1">Yes</option>
+					<option value="0">No</option>	
+				</field>
+			</fieldset>
+			<fieldset name="META 1" label="META 1">
+				<field name="meta1_name" type="text" default="" label="META Name" description="Place here the name of the META tag." />
+				<field name="meta1_content" type="text" default="" label="META Content" description="Place here the content of the META tag." />
+			</fieldset>
+			<fieldset name="META 2" label="META 2">
+				<field name="meta2_name" type="text" default="" label="META Name" description="Place here the name of the META tag." />
+				<field name="meta2_content" type="text" default="" label="META Content" description="Place here the content of the META tag." />
+			</fieldset>
+			<fieldset name="META 3" label="META 3">
+				<field name="meta3_name" type="text" default="" label="META Name" description="Place here the name of the META tag." />
+				<field name="meta3_content" type="text" default="" label="META Content" description="Place here the content of the META tag." />
+			</fieldset>
+			<fieldset name="META 4" label="META 4">
+				<field name="meta4_name" type="text" default="" label="META Name" description="Place here the name of the META tag." />
+				<field name="meta4_content" type="text" default="" label="META Content" description="Place here the content of the META tag." />
+			</fieldset>
+			<fieldset name="META 5" label="META 5">
+				<field name="meta5_name" type="text" default="" label="META Name" description="Place here the name of the META tag." />
+				<field name="meta5_content" type="text" default="" label="META Content" description="Place here the content of the META tag." />
+			</fieldset>			
+		</fields>
+	</config>	
+</install>
+
